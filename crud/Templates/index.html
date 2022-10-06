@@ -8,11 +8,21 @@
 </head>
 <body>
 
-    <p>Hola mundo</p>
+    <h2>Personas</h2>
 
     {%for persona in personas%}
     <p>{{persona.nombre}}</p>
     {%endfor%}
+
+    <form action="" method="POST">
+        {%csrf_token%}
+
+        {{formulario}}
+
+        <button type="submit">agregar</button>
+    </form>
+
+
     
 </body>
 </html>
