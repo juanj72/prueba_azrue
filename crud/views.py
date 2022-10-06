@@ -20,4 +20,4 @@ def inicio(request):
 
 
 
-    return render(request,"./index.html",{"personas":personas,"formulario":formulario})
+    return render(request,"index.html",{"personas":personas,"formulario":formulario})
